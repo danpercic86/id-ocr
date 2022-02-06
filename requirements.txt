@@ -1,0 +1,4 @@
+numpy~=1.22.2
+pytesseract~=0.3.8
+opencv-contrib-python=~4.5.5.62
+jupyter=~1.0.0

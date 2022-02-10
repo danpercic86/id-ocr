@@ -15,7 +15,7 @@ def _get_image(src) -> NDArray:
 
 @_get_image.register
 def __get_image(src: str) -> NDArray:
-    return plt.imread(f'results/{src}.jpg')
+    return plt.imread(f"results/{src}.jpg")
 
 
 @_get_image.register(np.ndarray)
@@ -24,7 +24,7 @@ def __get_image(src: NDArray) -> NDArray:
 
 
 def show(src: str | NDArray) -> None:
-    dpi = matplotlib.rcParams['figure.dpi']
+    dpi = matplotlib.rcParams["figure.dpi"]
 
     image = _get_image(src)
 
@@ -38,5 +38,5 @@ def show(src: str | NDArray) -> None:
     ax = fig.add_axes([0, 0, 1, 1])
 
     # Display the image.
-    ax.imshow(image, cmap='gray')
+    ax.imshow(image, cmap="gray")
     plt.show()

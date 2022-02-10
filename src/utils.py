@@ -7,4 +7,4 @@ def load(filename: str) -> NDArray:
 
 
 def save(filename: str, image: NDArray) -> None:
-    cv2.imwrite(f'results/{filename}.jpg', image)
+    cv2.imwrite(f"results/{filename}.jpg", image)
